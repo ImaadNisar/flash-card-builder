@@ -1,0 +1,520 @@
+body {
+    font-family:  "Haas Grot Text R Web", Helvetica, sans-serif;
+    background-color: rgb(53,116,207);
+    color: whitesmoke;
+    margin: 0;
+    font-weight: bold;
+}
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 7em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.08);
+    z-index: 10;
+}
+header img {
+    position: absolute;
+    width: 25em;
+    margin: auto;
+    left:0;
+    top:0;
+    bottom: 0;
+    right: 0;
+}
+nav li {
+    float: right;
+    padding: 0.9em 1em;
+    border: 3px solid rgb(53,116,207);
+    margin: 16px 20px 0 20px;
+    border-radius: 15px;
+    background-color: rgb(53,116,207);
+    font-size: 16px;
+    box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.2);
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+nav li.revise_btn {
+    background-color: whitesmoke;
+    color: rgb(53,116,207);
+    border: 3px solid rgb(53,116,207);
+    margin: 15px;
+}
+nav li.create_btn {
+    background-color: rgb(53,116,207);
+    border: 3px solid rgb(53,116,207);
+}
+ul {
+    list-style: none;
+}
+main {
+    margin: 14em auto;
+    text-align: center;
+    animation: transitionIn 1s
+}
+article.description {
+    width: 50%;
+    margin: auto;
+}
+article h1 {
+    font-size: 64px;
+}
+article p {
+    font-size: 13px;
+    line-height: 1.5em;
+}
+.button {
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    top: 2em;
+    border: 2px solid whitesmoke;
+    padding: 15px 35px;
+    border-radius: 15px;
+}
+.quotes_section h2 {
+    margin: 3em 0 0 0;
+    font-size: 48px;
+}
+.quotes_section img {
+    display: block;
+    width: 20%;
+    margin: 1em 0;
+}
+.quotes_section .q2 {
+    float: right;
+    transform: scaleX(-1)
+}
+.quotes_section .quotes {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-size: 22px;
+}
+.contact_box {
+    width: 7em;
+    position: relative;
+    margin: auto;
+    top: 20em;
+    padding: 20px 30px;
+    border: 2px solid white;
+    font-size: 12px;
+}
+footer {
+    position: relative;
+    text-align: center;
+    padding: 5em;
+    font-size: 11px;
+}
+.create_btn:hover {
+    animation-name: create_hover;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes create_hover {
+    100% {
+        background-color: rgb(51, 105, 180);
+    }
+}
+.revise_btn:hover {
+    animation-name: revise_hover;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes revise_hover {
+    100% {
+        background-color:rgba(156, 156, 156, 0.3)
+    }
+}
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-5deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+.button:hover {
+    animation-name: create_hover;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+.contact_box:hover {
+    animation-name: create_hover;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+.ebbinghaus {
+    max-width: 1000px;
+    margin: 5em auto;
+}
+.revision_text {
+    text-align: justify;
+    max-width: 50%;
+    margin: auto;
+    font-size: 1.1em;
+}
+@media screen and (max-width:1400px) {
+    .description h1 {
+        font-size: 46px;
+    }
+    header img {
+        position: relative;
+        left: 10px;
+        top: 10px;
+    }
+    header nav ul {
+        position: relative;
+        bottom: 95px;
+    }
+}
+@media screen and (max-width:700px) {
+    article.description {
+        width: 90%;
+    }
+}
+@media screen and (max-width:1000px) {
+    .quotes_section h2 {
+        font-size: 36px;
+    }
+    .quotes_section article .quotes {
+        font-size: 14px;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:1275px) {
+    header img {
+        display: none;
+    }
+    header nav ul {
+        top: 0;
+    }
+    header nav .create_btn {
+        float: left;
+        width: 35%;
+        text-align: center;
+        position: relative;
+        right: 45px;
+    }
+    header nav .revise_btn {
+        width: 35%;
+        text-align: center;
+    }
+    div .create_f_heading {
+        font-size: 40px;
+    }
+    div textarea {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:760px) {
+    header nav li {
+        font-size: 16px;
+        
+    }
+    header nav .create_btn {
+        float: left;
+        width: 110px;
+        text-align: center;
+        position: relative;
+        right: 40px;
+        bottom: 10px;
+    }
+    header nav .revise_btn {
+        width: 100px;
+        text-align: center;
+        position: relative;
+        bottom: 10px;
+    }
+}
+
+@media screen and (max-width:455px) {
+    header nav .create_btn {
+        display: block;
+        position: relative;
+        float: none;
+        right: 41px;
+        width: 90%;
+    }
+    header nav .revise_btn {
+        display: block;
+        position: relative;
+        float: none;
+        right: 36px;
+        width: 90%;
+        margin-top: 0;
+    }
+    header {
+        height: 9em;
+        position: relative;
+        padding-top: 40px;
+    }
+    header nav ul {
+        margin-top: 0;
+    }
+    main {
+        margin-top: 3em;
+    }
+
+}
+
+@media screen and (max-width:1095px) {
+    article .r_title {
+        font-size: 60px;
+    }
+    article .revision_text {
+        font-size: 18px;
+        max-width: 90%;
+    }
+    .ebbinghaus {
+        max-width: 90%;
+    }
+}
+@media screen and (max-width:760px) {
+    article .r_title {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:455px) {
+    article .r_title {
+        font-size: 30px;
+    }
+    .ebbinghaus {
+        margin: 10px auto;
+    }
+    body main article .revision_text {
+        font-size: 11px;
+    }
+    main .create_f_container {
+        width: 90%;
+    }
+    main div textarea {
+        font-size: 12px;
+    }
+    main .go_button {
+        width: 60%;
+        font-size: 18px;
+    }
+    
+}
+@media screen and (max-width:850px) {
+    .create_f_container .create_f_contents .create_f_heading {
+        font-size: 25px;
+    }
+}
+
+hr {
+    color: whitesmoke
+}
+
+.create_f_container {
+    width: 60%;
+    height: 700px;
+    background-color: whitesmoke;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 0 7px 10px 7px rgba(0, 0, 0, 0.2);
+}
+
+.create_f_heading {
+    color:rgb(51, 105, 180);
+    font-size: 60px;
+    margin-top: 50px;
+}
+
+textarea {
+    resize: none;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+textarea:hover {
+    border: 3px solid rgb(51, 105, 180)
+}
+
+textarea:focus{
+    outline-color: rgb(51, 105, 180);
+}
+
+.create_f_contents {
+    height: 400px;
+}
+
+#front {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    height: 50%;
+    
+}
+
+#back {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    height: 50%;
+}
+.create_f_button {
+    color: whitesmoke;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(53,116,207);
+    border-radius: 15px;
+    margin: auto;
+    line-height: 50px;
+    font-size: 20px;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgb(53,116,207);
+
+}
+.create_f_button:hover {
+    cursor: pointer;
+    animation-name: create_ani;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes create_ani {
+    100% {
+        background-color: rgb(45, 93, 161);
+    }
+}
+.go_button {
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+    background-color: rgb(18, 128, 54);
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.3);
+    line-height: 70px;
+    font-size: 25px;
+}
+.go_button:hover {
+    cursor: pointer;
+    animation-name: go_ani;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes go_ani {
+    100% {
+        background-color: rgb(12, 90, 38);
+    }
+}
+
+.delete_button {
+    background-color: rgba(168, 14, 14, 0.836);
+    width: 150px;
+    height: 50px;
+    margin: 50px auto 0;
+    border-radius: 15px;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.3);
+    line-height: 50px;
+    
+}
+.delete_button:hover {
+    cursor: pointer;
+    animation-name: del_ani;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes del_ani {
+    100% {
+        background-color: rgba(121, 11, 11, 0.836);
+    }
+}
+
+
+
+
+
+.scene {
+    width: 50%;
+    height: 600px;
+    margin: auto;
+    perspective: 1600px;
+}
+
+.card {
+    width: 100%;
+    height: 80%;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+.card.is-flipped {
+    transform: rotateX(180deg);
+}
+
+.card__face {
+    color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 60px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    word-break: break-word;
+}
+.card__face--front {
+    background: whitesmoke;
+}
+  
+.card__face--back {
+    background: whitesmoke;
+    transform: rotateX(180deg);
+}
+#front_text {
+    position: relative;
+    margin: 5%;
+    font-size: 64px;
+}
+#back_text {
+    position: relative;
+    margin: 6%;
+    font-size: 32px;
+}
+
+.next_card {
+    font-size: 15px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(51, 105, 180);
+    color: white;
+    border-radius: 15px;
+    line-height: 50px;
+    position: absolute;
+    top: 500px;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.3);
+
+}
+
+@media screen and (max-width:1650px) {
+    #back_text {
+        font-size: 24px;
+    }
+    #front_text {
+        font-size: 50px
+    }
+}
+@media screen and (max-width:980px) {
+    #back_text {
+        font-size: 16px;
+    }
+    #front_text {
+        font-size: 28px
+    }
+}

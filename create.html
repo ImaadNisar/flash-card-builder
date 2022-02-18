@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/favicon.ico">
+    <meta charset="UTF-8" lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Flash! Cards - Home</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo.png" alt="Flash! Cards"></a>
+        <nav>
+            <ul>
+                <a href="revise.html" ><li class="revise_btn">How to revise</li></a>
+                <a href="create.html" ><li class="create_btn">Create a Flash! card</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <div class="create_f_container">
+            <div class="create_f_contents">
+                <h1 class="create_f_heading">Create a new flashcard</h1>
+                <textarea name="front" id="front" maxlength="70" placeholder="What would you like to display on the front of the card... (Max 70 characters)"></textarea>
+                <textarea name="back" id="back" maxlength="320" placeholder="What would you like to display on the back of the card... (Max 320 characters)"></textarea>
+                <div class="create_f_button" onclick="createFlashcard()">
+                    Create
+                </div>
+            </div>
+        </div>
+        
+        <div class="delete_button" onclick="deleteFlashcard()">
+            Delete All
+        </div>
+    
+        <a href="#" style="width:200px; margin:auto; display: block;" onclick="checkList()">
+            <div class="go_button">
+                Lets go!
+            </div>
+        </a>
+        
+
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2005-2022 Flash! Cards. No Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

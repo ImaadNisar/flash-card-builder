@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/favicon.ico">
+    <meta charset="UTF-8" lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Flash! Cards - Home</title>
+</head>
+<body onload="nextFront()">
+    <header>
+        <a href="index.html"><img src="img/logo.png" alt="Flash! Cards"></a>
+        <nav>
+            <ul>
+                <a href="revise.html" ><li class="revise_btn">How to revise</li></a>
+                <a href="create.html" ><li class="create_btn">Create a Flash! card</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="scene scene--card">
+            <div class="card">
+                <div class="card__face card__face--front">
+                    <div id="front_text">Front</div>
+                </div>
+                <div class="card__face card__face--back">
+                    <div id="back_text">Back</div>
+                    <div class="next_card" onclick="nextFront()">Next Card</div>
+                </div>
+            </div>
+          </div>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2005-2022 Flash! Cards. No Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
